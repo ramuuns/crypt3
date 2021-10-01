@@ -10,16 +10,16 @@ defmodule Crypt3.Mixfile do
 
   def project do
     [
-      app: :crypt3,
+      app: :crypt3r,
       compilers: [:nif] ++ Mix.compilers,
-      version: "1.0.4",
+      version: "1.0.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       build_embedded: true,
       deps: deps(),
       package: package(),
       description: description(),
-      source_url: "https://github.com/ominousness/crypt3"
+      source_url: "https://github.com/ramuuns/crypt3"
     ]
   end
 
@@ -46,9 +46,9 @@ defmodule Crypt3.Mixfile do
   defp package do
     [
       files: ["lib", "c_src", "mix.exs", "README.md", "Makefile", "LICENSE", "config", "test", "priv"],
-      maintainers: ["Ominousness"],
+      maintainers: ["ramuuns"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ominousness/crypt3"}
+      links: %{"GitHub" => "https://github.com/ramuuns/crypt3r"}
     ]
   end
 end
